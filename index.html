@@ -12,34 +12,23 @@
       crossorigin="anonymous"
     />
     <title>Weather App</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <div class="container">
-      <div class="WeatherBox">
+      <div class="WeatherInnerBox">
         <form>
           <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                class="form-control.search-input"
-              />
-            </div>
-            <div class="col-3 p-0">
-              <input
-                type="submit"
-                class="btn btn-primary w-100"
-                value="search"
-              />
-            </div>
-          </div>
+             <div class="search-box">
+    <button class="btn-search"><i class="fas fa-search"></i></button>
+    <input type="text" class="input-search" placeholder="Enter a city...">
+  </div>
         </form>
+        <body>
+    <div class="container">
         <div class="CurrentWeatherInfo">
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <h1>City here</h1>
               <h2>00 C°</h2>
               <ul>
@@ -50,15 +39,17 @@
                 <li>Wind: 0.00 km/h</li>
               </ul>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <img
                 src="img/umbrella.png"
                 alt="Yellow Umbrella"
                 class="temperature-containter d-flex justify-content-end"
-                width="250"
-                height="220"
+                width="300"
+                height="250"
               />
             </div>
+          </div>
+          </div>
           </div>
           <div class="WeatherForecastRow"> 
             <div class="col">
