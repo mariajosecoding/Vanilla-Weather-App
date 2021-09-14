@@ -1,5 +1,4 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,69 +6,146 @@
 
 main {
   min-height: 100vh;
-  background:linear-gradient(to right top,#f8b9b9,#FFD8D8);
+  background: linear-gradient(to right top, #f8b9b9, #ffd8d8);
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.glass{
+.glass {
   background: white;
   min-height: 80vh;
   width: 60%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255,255,255,0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
   border-radius: 20px;
   z-index: 2;
   backdrop-filter: blur(10px);
 }
 
-
-
-.circle1,.circle2 {
+.circle1,
+.circle2 {
   background: rgb(255, 255, 255);
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0.5));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  );
   height: 200px;
   width: 200px;
-  position:absolute;
+  position: absolute;
   border-radius: 50%;
-  
 }
 
-
-.circle3,.circle4 {
+.circle3,
+.circle4 {
   background: white;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255,255,255,0.1));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
   height: 50px;
   width: 50px;
-  position:absolute;
+  position: absolute;
   border-radius: 50%;
-    
 }
 
-
-
-.circle1{
-  top:5%;
-  right:10%;
+.circle1 {
+  top: 5%;
+  right: 10%;
 }
 
-
-.circle2{
-  bottom:5%;
-  left:15%;
-  
+.circle2 {
+  bottom: 5%;
+  left: 15%;
 }
 
 .circle3 {
-  top:85%;
-  right:10%
+  top: 85%;
+  right: 10%;
 }
 
 .circle4 {
-  bottom:90%;
-  left:10%
+  bottom: 90%;
+  left: 10%;
 }
 
 
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(255, 117, 117, 0.4);
+  color: #ff7575;
+}
+
+.Search {
+  padding-left: 40%;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #ff7575;
+  opacity: 0.5;
+}
+
+.boxInfo1 {
+   height: 250px;
+  width: 250px;
+ background: linear-gradient(to right top, #fad3d3, #ffd8d894);
+  margin: 100px;
+  border-radius: 20px;
+  
+}
+.boxInfo2 {
+height: 200px;
+width: 200px;
+background-color: #ff7575;
+align-items: center;
+margin: 25px;
+position: relative;
+top: 25px;
+border-radius: 20px;
+align-items: center;
+display: flex;
+justify-content: center;
+box-shadow:8px 8px 15px rgba(255, 114, 114, 0.658);
 
 
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+.degree {
+  font-size: 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.WeatherForecastList {
+  margin: 30px;
+  
+}
+
+.temperature-max {
+  font-weight: bolder;
+}
+
+.temperature-min {
+  font-size: 15px;
+}

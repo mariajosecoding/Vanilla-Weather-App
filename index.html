@@ -11,42 +11,144 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
     <main>
-      <section class="glass">  
+      <section class="glass">
         <div class="city">
           <h1>New York</h1>
         </div>
-        <div class="search-bar">
         <div class="Search">
-          <form action="search">
-      <input type="text" placeholder="Search a city..." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-    </div>
+          <form action="search d-flex justify-content-center">
+            <input type="text" placeholder="Search a city..." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </div>
-    <div class="row">
-      <div class="col-6">
-<div class="weatherCard">
-            <div class="degrees">
-              <h2> 18 </h2>
+        <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="boxInfo1">
+              <div class="boxInfo2"> 
+              <h2>
+                <span class="temperature"> 18 </span>
+                <span class="degree">°C</span>
+              </h2>
+              <ul>
+                <li id="time">4:55</li>
+                <li id="sky">clear sky</li>
+                <li id="humidity">10%</li>
+                <li id="wind">2k/hr</li>
+              </ul>
+              </div>
             </div>
-            <ul>
-              <li id="time">4:55</li>
-              <li id="sky">clear sky</li>
-              <li id="humidity">10%</li>
-              <li id="wind">2k/hr</li>
-      </div>
-    </ul>
-                </div>
+          </div>
+          <div class="col-6">
+            <div class="temperature-container d-flex justify-content-end">
+              <img
+                src="img/partlyCould-01.png"
+                alt=""
+                height="300px"
+                width="320px"
+              />
             </div>
-            <div class="col-6">
-           <div class="weatherIcon"> 
-              <img src="img/partlyCould-01.png" alt="" height="50px" width="50px"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Tue</div>
+              <img
+                src="img/partlyCould-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
             </div>
-</div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Wed</div>
+              <img
+                src="img/rain-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Thur</div>
+              <img
+                src="img/partlyCould-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Fri</div>
+              <img
+                src="img/storm-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Sat</div>
+              <img
+                src="img/partlyCould-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastList">
+              <div class="forecast-day">Sun</div>
+              <img
+                src="img/sunny-01.png"
+                class="partlyCloud"
+                height="38"
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <spa class="temperature-max">26° </spa>
+                <spa class="temperature-min">20° </spa>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -54,8 +156,8 @@
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
-     <div class="circle4"></div>
-     
+    <div class="circle4"></div>
+    
   </body>
   <script src="src/app.js"></script>
 </html>
